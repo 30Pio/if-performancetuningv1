@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tuning Atelier</title>
+
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css" />
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="./assets/js/main.js"></script>
+  </head>
+  <body
+    class="main__content"
+  >
+    <div class="full_main_area">
+      <!-- Tuning Header -->
+      <div class="tuning__header">
+        <div class="tuning__header-left">
+          <h3 id="title"></h3>
+          <img src="assets/img/tuningatelier.png" alt="tuning" />
+          <p id="description">
+
+          </p>
+        </div>
+        <div class="tuning__header-right" id="close">
+          <p>Exit the menu</p>
+          <a id="test" href="#">
+          <img src="assets/img/close.svg" alt="close" />
+          </a>
+        </div>
+      </div>
+      <!-- Tuning Body -->
+      <div class="tuning__body">
+        <div class="tuning__body-top">
+          <div class="single__top" onclick="teile('getid', '1')">
+            <button type="button">
+              <img src="assets/img/engine.svg" alt="engine" />
+              <h3>Engine</h3>
+            </button>
+          </div>
+          <!-- Single Item -->
+          <div class="single__top" onclick="teile('getid', '3')">
+            <button type="button" >
+              <img src="assets/img/brakepads.svg" alt="engine" />
+              <h3>Brake pads</h3>
+            </button>
+          </div>
+          <!-- Single Item -->
+          <div class="single__top" onclick="teile('getid', '4')">
+            <button type="button">
+              <img src="assets/img/turbo.svg" alt="engine" />
+              <h3>turbo</h3>
+            </button>
+          </div>
+          <!-- Single Item -->
+          <div class="single__top" onclick="teile('getid', '5')">
+            <button type="button">
+              <img src="assets/img/damper.svg" alt="engine" />
+              <h3>armour</h3>
+            </button>
+          </div>
+          <!-- Single Item -->
+          <div class="single__top" onclick="teile('getid', '6')">
+            <button type="button">
+              <img src="assets/img/vinyl.svg" alt="engine" />
+              <h3>Transmission</h3>
+            </button>
+          </div>
+          <!-- Single Item -->
+          <div class="single__top" onclick="teile('getid', '2')">
+            <button type="button">
+              <img src="assets/img/suspension.svg" alt="engine" />
+              <h3>suspension</h3>
+            </button>
+          </div>
+          
+        </div>
+        <!-- Tuning Body List -->
+        <div class="tuning__body-list">
+        <ul id="insert">
+
+        </ul>
+          <button type="button" class="totall__btn">
+            <span>Total:</span>
+            <span id="totalprice">0$</span>
+          </button>
+      
+          <div class="footer__btns">
+    
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
